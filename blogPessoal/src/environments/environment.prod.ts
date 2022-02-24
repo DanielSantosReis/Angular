@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  foto: "",
+  foto: '',
   nome: '',
   token:'',
   tipo:'',

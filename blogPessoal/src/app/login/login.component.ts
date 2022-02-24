@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     window.scroll(0, 0);
   }
 
@@ -33,10 +33,7 @@ export class LoginComponent implements OnInit {
         environment.tipo = this.userLogin.tipo
 
         // console.log(environment.token)
-        // console.log(environment.nome)
-        // console.log(environment.foto)
-        // console.log(environment.id)
-
+        
         this.router.navigate(['/inicio'])
   
       },

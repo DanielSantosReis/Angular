@@ -1,8 +1,14 @@
 #imgbg {
-    background-image: url('https://i.imgur.com/jAZOVhd.jpg');
+    background-image: url('https://d31cp7lkikyah4.cloudfront.net/wp-content/uploads/2021/09/cadastro-casa-verde-amarela.jpg');
     
     min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(38, 38, 105);
+    font-family: monospace;
 }

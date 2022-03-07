@@ -39,7 +39,7 @@ export class InicioComponent implements OnInit {
       this.router.navigate(['/login'])
     }
     this.listarTemas()
-    this.listarTodasPostagens()
+    this.getAllPostagens()
   }
 
   listarTemas(){
@@ -53,13 +53,13 @@ export class InicioComponent implements OnInit {
       this.tema = resp
     })
   }
-  findByIdUser(){
-    this.authService.getByIdUser(this.idUsuario).subscribe((resp: Usuario)=>{
+  findByIdUsuario(){
+    this.authService.getByIdUsuario(this.idUsuario).subscribe((resp: Usuario)=>{
       this.usuario = resp
     })
   }
 
-  listarTodasPostagens(){
+  getAllPostagens(){
     this.postagemService.getAllPostagens().subscribe((resp: Postagem[])=>{
       this.listarPostagens = resp
       console.log(this.listarPostagens)
@@ -77,6 +77,7 @@ export class InicioComponent implements OnInit {
       this.postagem = resp;
       alert('Postagem realizada')
       this.postagem = new Postagem()
+      this.getAllPostagens()
     })
   }
 

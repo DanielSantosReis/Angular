@@ -12,8 +12,9 @@
             <li class="nav-item">
                 <p class="m-0 font-weight-bold text-white pl-3 font-16">Olá, {{nome}}</p>
             </li>
+            
             <li class="nav-item">
-                <a href="">
+                <a [routerlink]="['/usuario-edit', id]">
                     <p class="text-white pl-3 font-16 m-0"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></p>
                 </a>
             </li>
